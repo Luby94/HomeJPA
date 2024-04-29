@@ -11,6 +11,15 @@ public class HomeController {
     // Springboot 에서는 jsp 대신
     // View template : Mustache(수염) 사용
 
+	// /hi : http://localhost:9090/hi
+	@GetMapping("/hi")
+	public String hi() {
+		return "greetings";
+		// greetings.mustache 화면을 보여줄 template 이름
+		// resources/template package 에 생성
+	}
+	
+	
 	@GetMapping("/hi2")
 	public  String   hi2(Model model) {
 		
