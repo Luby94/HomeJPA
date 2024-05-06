@@ -54,5 +54,13 @@
 		</nav>
 	  <!-- bootstrap 네비게이션 바 끝-->
   
+  <!-- RedirectAttribute 값 표시를 위해 추가 : modal type -->
+  {{#msg}}
   
+  <div class="alert alert-primary alert-dismissible">
+    {{msg}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+  </div>
+  
+  {{/msg}}
   
