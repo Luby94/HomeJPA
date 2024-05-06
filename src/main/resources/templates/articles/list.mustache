@@ -1,0 +1,30 @@
+{{>layouts/header}}
+ 
+  <!-- 부트스트랩 table 참고 -->
+  <!-- 머스태치 문법 : https://bibi6666667.tistory.com/269 -->
+  
+  <table class="table">
+  
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Content</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    {{#articleList}}
+    <tr>
+      <th scope="row">{{ id }}</th>
+      <td><a href="/articles/{{ id }}">{{ title }}</a></td>
+      <td>{{ content }}</td>
+    </tr>
+    {{/articleList}}
+  </tbody>
+  
+  </table>
+  
+  <a href="/articles/WriteForm" class="btn btn-primary">새 글 쓰기</a>
+
+{{>layouts/footer}}

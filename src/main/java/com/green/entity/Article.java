@@ -12,10 +12,10 @@ import lombok.NoArgsConstructor;
 // 실제 database 의 table 구조를 만든다
 // import : jakarta 로 → import jakarta.persistence.Entity;
 // persistence : 영속성 → 영구적으로 보관, pk(primary key) 를 영구적으로 만들어라
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 public class Article {
 
 	// primary key : @Id
