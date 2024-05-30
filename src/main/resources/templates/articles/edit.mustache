@@ -1,0 +1,24 @@
+{{ >layouts/header }}
+
+  {{ #article }}
+  <form class="container" action="/articles/Edit" method="POST">
+  <input type="hidden" name="id" value="{{ id }}" />
+  
+    <div class="mb-3">
+      <label class="form-label">제목</label>
+	  <input type="text" name="title" class="form-control" value={{ title }} />
+    </div>
+    
+    <div class="mb-3">
+      <label class="form-label">내용</label>
+	  <textarea class="form-control" name="content" rows="3">{{ content }}</textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/articles/List" class="btn btn-secondary">글 목록</a>
+    <a href="/articles/1">1번 글 조회</a>
+    
+  </form>
+    {{ /article }}
+
+{{ >layouts/footer }}
