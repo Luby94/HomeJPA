@@ -161,7 +161,7 @@ public class ArticleController {
 	@PostMapping("/articles/Edit")
 	public String edit( ArticleForm articleForm ) {
 		
-		log.info( "수정용 데이터: " + articleForm.toString() );
+		//log.info( "수정용 데이터: " + articleForm.toString() );
 		  // @GetMapping("/articles/{id}/EditForm") 의 sysout
 		  //   → edit 데이터 조회: Article(id=1, title=aaa, content=aaa)
 		  // 수정용 데이터: ArticleForm(id=1, title=ccc, content=ccc)
